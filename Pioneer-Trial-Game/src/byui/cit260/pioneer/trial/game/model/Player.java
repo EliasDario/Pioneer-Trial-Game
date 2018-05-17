@@ -6,6 +6,7 @@
 package byui.cit260.pioneer.trial.game.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
@@ -18,8 +19,17 @@ public class Player implements Serializable{
     private double bestScore;
     private double totalDistTraveled;
     private int health;
+    private ArrayList<Game> games = new ArrayList<Game>();
 
     public Player() {
+    }
+
+    public ArrayList<Game> getGames() {
+        return games;
+    }
+
+    public void setGames(ArrayList<Game> games) {
+        this.games = games;
     }
     
     
