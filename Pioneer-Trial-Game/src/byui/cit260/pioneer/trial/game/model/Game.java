@@ -28,6 +28,7 @@ public class Game implements Serializable{
         this.player = player;
     }
     
+    
     public double getTotalTime() {
         return totalTime;
     }
